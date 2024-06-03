@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -27,7 +27,7 @@
   --tile-border: conic-gradient(
     #00000080,
     #00000040,
-    #00000030,
+    #00000030, 
     #00000020,
     #00000010,
     #00000010,
@@ -102,6 +102,69 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
+  }
+} */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  background-color: #3e2f6d;
+  /* background-image: linear-gradient(
+    0deg,
+    hsl(0deg 100% 4%) 0%,
+    hsl(1deg 93% 5%) 16%,
+    hsl(2deg 89% 6%) 23%,
+    hsl(3deg 87% 7%) 29%,
+    hsl(4deg 85% 8%) 34%,
+    hsl(5deg 85% 9%) 39%,
+    hsl(5deg 85% 9%) 43%,
+    hsl(4deg 85% 10%) 48%,
+    hsl(4deg 86% 11%) 52%,
+    hsl(3deg 87% 12%) 57%,
+    hsl(2deg 89% 12%) 61%,
+    hsl(1deg 91% 13%) 66%,
+    hsl(1deg 93% 14%) 71%,
+    hsl(0deg 95% 14%) 77%,
+    hsl(0deg 97% 15%) 84%,
+    hsl(0deg 100% 16%) 100%
+  ); */
+}
+
+#canvas {
+  height: 100vh;
+}
+.video-tag {
+  /* height: 300px; */
+  width: 300px;
+  /* border: 1px solid green; */
+  border-radius: 7px;
+  position: absolute;
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+}
+.permissionBox {
+  width: 60%;
+  height: min(500px, 50vh);
+  position: absolute;
+  z-index: 3;
+  background-color: red;
+}
+.special-canvas {
+  width: 300px;
+  z-index: 4;
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 1000px) {
+  .video-tag {
+    opacity: 0;
   }
 }
