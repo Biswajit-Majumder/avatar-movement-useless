@@ -181,7 +181,7 @@ export default function Home() {
       {/* I don't what the thing is this doing I have to check it later */}
       <div>
         <video ref={videoRef} autoPlay className="video-tag" />
-        <canvas ref={canvasElementRef} className="special-canvas"></canvas>
+        {/* <canvas ref={canvasElementRef} className="special-canvas"></canvas> */}
       </div>
       {/* <Stats showPanel={0} className="stats" /> */}
 
