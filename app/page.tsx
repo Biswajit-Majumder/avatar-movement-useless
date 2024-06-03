@@ -38,7 +38,8 @@ what are facial blend shaped score (values) ?
 let faceLandmarker: FaceLandmarker;
 let lastVideoTime = 0;
 let blendshapes: any[] = [];
-let headMesh: Object3D<Object3DEventMap>[] = [];
+// let headMesh: Object3D<Object3DEventMap>[] = [];
+let headMesh: any[] = [];
 let rotation: Euler;
 
 function Avatar() {
