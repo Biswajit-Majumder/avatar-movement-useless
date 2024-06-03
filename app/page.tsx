@@ -207,7 +207,7 @@ export default function Home() {
           intensity={1}
           castShadow
         />
-        <pointLight position={[0, 0.65, 0]} intensity={1} />
+        <pointLight position={[0, 0, 0.56]} intensity={1} />
         <pointLight position={[0, 0, 10]} intensity={0.5} castShadow />
         <Suspense fallback={"Loading"}>
           <Avatar />
