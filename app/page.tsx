@@ -92,10 +92,14 @@ export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(undefined!);
   const canvasElementRef = useRef<HTMLCanvasElement>();
   let [isPermissionGranted, setIsPermissionGranted] = useState(false);
-  const canvasCtx = canvasElementRef.current?.getContext(
-    "WebGL2RenderingContext"
-  );
-  const drawingUtils = new DrawingUtils(canvasCtx);
+  let canvasCtx;
+  if (canvasElementRef.current) {
+    canvasCtx = canvasElementRef.current.getContext(
+      // "WebGL2RenderingContext"
+      "2d"
+    );
+  }
+  // const drawingUtils = new DrawingUtils(canvasCtx);
 
   // setting up the video configarations
   async function videoSetup() {
